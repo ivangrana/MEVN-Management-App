@@ -15,6 +15,7 @@ exports.createNote = async (req, res) => {
 // Get all notes
 exports.getAllNotes = async (req, res) => {
   try {
+    const request = req.body;
     const notes = await Note.find();
     res.json(notes);
   } catch (error) {
