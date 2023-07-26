@@ -2,6 +2,8 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const noteRoutes = require('./Routes/noteRoutes');
+const teamRoutes = require('./Routes/TeamRoutes');
+
 
 const app = express();
 const port = 3000;
@@ -23,6 +25,8 @@ app.use(bodyParser.json());
 
 // Routes
 app.use('/api/notes', noteRoutes);
+app.use('/api/teams', teamRoutes);
+
 
 // Start the server
 app.listen(port, () => {
