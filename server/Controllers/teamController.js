@@ -1,5 +1,5 @@
 // controllers/teamController.js
-const Team = require('../models/Team');
+const Team = require('../Models/Team');
 
 exports.createTeam = async (req, res) => {
   try {

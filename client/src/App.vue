@@ -6,21 +6,28 @@
         color="#141414"
         style="color: #cacaca;"
       >
-        <v-list>
-          <v-list-item
-            prepend-avatar="https://avatars.githubusercontent.com/u/89265428?v=4"
-            title="Ivan"
-            subtitle="Manager"
-          ></v-list-item>
-        </v-list>
+      <v-list>
+        <v-list-item
+          prepend-avatar="https://avatars.githubusercontent.com/u/89265428?v=4"
+          title="Ivan"
+          subtitle="online"></v-list-item>
+      </v-list>
 
         <v-divider></v-divider>
 
         <v-list density="compact" nav>
-          <v-list-item prepend-icon="mdi-home" title="Home" value="home" to="/"></v-list-item>
+          <v-list-item prepend-icon="mdi-checkbox-marked" title="To-do list" value="home" to="/"></v-list-item>
           <v-list-item prepend-icon="mdi-chart-donut" title="Dashboard" value="myfiles" to="/dashboard"></v-list-item>
           <v-list-item prepend-icon="mdi-account-group" title="My team" value="shared" to="/team"></v-list-item>
-          <v-list-item prepend-icon="mdi-clipboard" title="Notations" value="starred"></v-list-item>
+          <v-list-item prepend-icon="mdi-clipboard" title="Notes" value="starred" to="/notes"></v-list-item>
+          
+        </v-list>
+    
+
+        <v-list rounded>
+          <v-list-item
+          ><v-list-item><VBtn size="small" color="white">Log out</VBtn></v-list-item></v-list-item>
+
         </v-list>
       </v-navigation-drawer>
 

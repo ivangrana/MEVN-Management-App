@@ -1,7 +1,7 @@
 // routes/teamRoutes.js
 const express = require('express');
 const router = express.Router();
-const teamController = require('../controllers/teamController');
+const teamController = require('../Controllers/teamController');
 
 router.post('/', teamController.createTeam);
 router.get('/', teamController.getAllTeams);

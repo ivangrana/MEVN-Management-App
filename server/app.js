@@ -7,7 +7,7 @@ const teamRoutes = require('./Routes/TeamRoutes');
 
 const app = express();
 const port = 3000;
-const mongoURL = 'mongodb://'; // Replace with your MongoDB connection URL
+const mongoURL = 'mongodb+srv://ivangrana:<password>@cluster0.cuyssgi.mongodb.net/?retryWrites=true&w=majority'; // Replace with your MongoDB connection URL
 
 // Connect to MongoDB
 mongoose.connect(mongoURL, {
