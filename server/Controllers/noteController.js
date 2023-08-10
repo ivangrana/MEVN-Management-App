@@ -17,11 +17,11 @@ exports.getAllNotes = async (req, res) => {
   try {
     const request = req.body;
     const notes = await Note.find();
-    res.json(notes);
+    res.status(200).json(notes);
   } catch (error) {
     console.error('Failed to fetch notes !', error);
     res.status(500).json({ error: 'Failed to fetch notes' });
-  }
+  };
 };
 
 // Get a specific note by ID
