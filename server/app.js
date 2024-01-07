@@ -8,7 +8,7 @@ const taskRoutes = require('./Routes/TaskRoutes');
 const app = express();
 
 const port = 3000;
-const mongoURL = ''; // Replace with your MongoDB connection URL
+const mongoURL = 'mongodb+srv://ivangrana:4hkbgp3r@cluster0.eoomwko.mongodb.net/?retryWrites=true&w=majority'; // Replace with your MongoDB connection URL
 
 // Connect to MongoDB
 mongoose.connect(mongoURL, {
@@ -25,8 +25,8 @@ mongoose.connect(mongoURL, {
 app.use(bodyParser.json());
 
 // Routes
-app.use(noteRoutes);
 app.use(teamRoutes);
+app.use(noteRoutes);
 app.use(taskRoutes);
 
 // Start the server

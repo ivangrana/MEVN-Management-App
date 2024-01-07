@@ -4,7 +4,7 @@ const router = express.Router();
 const TaskController = require('../Controllers/taskController');
 
 router.post('/task', TaskController.createTask);
-router.get('/task', TaskCosntroller.getAllTask);
+router.get('/task', TaskController.getAllTasks);
 router.put('/task/:id', TaskController.updateTask);
 router.delete('/task/:id', TaskController.deleteTask);
 
