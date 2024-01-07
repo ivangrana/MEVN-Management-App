@@ -1,14 +1,15 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');
 const bodyParser = require('body-parser');
 const noteRoutes = require('./Routes/noteRoutes');
 const teamRoutes = require('./Routes/TeamRoutes');
 const taskRoutes = require('./Routes/TaskRoutes');
 
 const app = express();
-
+app.use(cors());
 const port = 3000;
-const mongoURL = 'mongodb+srv://ivangrana:4hkbgp3r@cluster0.eoomwko.mongodb.net/?retryWrites=true&w=majority'; // Replace with your MongoDB connection URL
+const mongoURL = ''; // Replace with your MongoDB connection URL
 
 // Connect to MongoDB
 mongoose.connect(mongoURL, {
@@ -30,6 +31,6 @@ app.use(noteRoutes);
 app.use(taskRoutes);
 
 // Start the server
-app.listen(port, () => {
+app.listen(port, "192.168.15.14", () => {
   console.log(`Server listening on port ${port}`);
 });

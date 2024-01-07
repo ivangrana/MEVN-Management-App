@@ -1,10 +1,8 @@
-Certainly! Here is a basic markdown documentation template for your app:
-
-# App Documentation
+# API RESTful documentation
 
 ## Overview
 
-This documentation provides an overview of the components and functionalities of the app. The app is built using Node.js, Express.js, and MongoDB with Mongoose for data modeling.
+This documentation provides an overview of the components and functionalities of the app. The app is built using Node.js, Express.js, and MongoDB with Mongoose for data modeling. Using MVC as design pattern.
 
 ## Table of Contents
 
@@ -238,5 +236,3 @@ app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });
 ```
-
-This documentation provides a basic overview of the app's structure, setup, and components. You can customize and expand this documentation based on your specific application features and requirements.
